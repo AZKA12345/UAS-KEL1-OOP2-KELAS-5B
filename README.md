@@ -1,0 +1,37 @@
+# UAS-KEL1-OOP2-KELAS-5B
+#KELAS_5B KELOMPOK 1 APLIKASI PEREKAMAN DATA PENULIS
+
+    AZKA WILLDAN MUKHOLLADUN 15090021 (KETUA TIM)
+    NADIYA RIZQI 15090030 (ANGGOTA 1)
+    SENO HENDY N 15090027 (ANGGOTA 2)
+    TRI THOLABUL ILMI 15090005(ANGGOTA 3)
+
+#STRUKTUR DATABASE
+
+NAMA DATABASE = uas 
+
+#TABEL PENULIS
+NAMA TABEL = penulis
+NAMA KOLOM 
+- id varchar(10), PRIMARY KEY
+- nama varchar(20),
+- judul_buku varchar(20) 
+
+#TABEL USERS
+NAMA TABEL = users
+NAMA KOLOM
+- username varchar(30), PRIMARY KEY
+- password varchar(200),
+- enabled boolean atau tinyint(1)
+
+#TABEL ROLES
+NAMA TABEL = roles
+NAMA KOLOM
+- id varchar(36), PRIMARY KEY
+- role varchar(200)
+
+#TABEL USER ROLE
+NAMA TABEL = user_role
+NAMA KOLOM
+- username varchar(30),
+- id_role varchar(36)
