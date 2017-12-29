@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Entry Data Penulis</title>
+
+	<script src="/js/angular.min.js"></script>
+	 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"/>
+
+	<script src="/app-penulis.js"></script>
+	<script src="/form-controller.js"></script>
+</head>
+<body class="container" ng-app="AppPenulis">
+
+	<div class="jumbotron">
+		<h1>Entry Data Penulis</h1>
+	</div>
+
+	<div ng-controller="FormController">
+		<form>
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label">ID</label>
+				<input type="text" class="col-sm-4 form-control"
+						placeholder="Masukkan ID Penulis" ng-model="pns.id" />
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label">NAMA</label>
+				<input type="text" class="col-sm-4 form-control" 
+						placeholder="Masukkan Nama Penulis" ng-model="pns.nama" />
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-2 col-form-label">JUDUL BUKU</label>
+				<input type="text" class="col-sm-4 form-control" 
+						placeholder="Masukkan Judul Buku" ng-model="pns.judul_buku" />
+			</div>
+			<div class="box-footer">
+				<button class="btn btn-primary col-pr-2" ng-click="simpan()">
+				<i class="glyphicon glyphicon-hdd"></i> 
+					Simpan
+				</button>
+				<button class="btn btn-primary" ng-click="batal()">
+					Kembali
+				</button>
+			</div>
+		</form>
+	</div>
+	
+</body>
+</html>
